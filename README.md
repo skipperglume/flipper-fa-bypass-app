@@ -154,3 +154,14 @@ screen /dev/serial/by-id/[...]
 ```
 
 
+
+Code inspired by: Flipper [U2F](https://github.com/flipperdevices/flipperzero-firmware/tree/dev/applications/main/u2f)
+
+
+firmware's API: 
+   - 'fa_bypass_scene_error_on_event'
+   - 'fa_bypass_scene_main_on_exit' 
+   - 'fa_bypass_scene_main_on_event'
+   - 'fa_bypass_scene_main_on_enter'
+   - 'fa_bypass_scene_error_on_exit'
+   - 'fa_bypass_scene_error_on_enter'
