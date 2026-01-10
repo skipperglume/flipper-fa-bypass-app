@@ -165,3 +165,15 @@ firmware's API:
    - 'fa_bypass_scene_main_on_enter'
    - 'fa_bypass_scene_error_on_exit'
    - 'fa_bypass_scene_error_on_enter'
+
+Workflow:
+```
+Idle, displaying curretnly the 2fa code as well as time passed from the moment of opening application.
+  ↓
+Waiting for OK
+  ↓
+User confirms → HID printing 
+  ↓
+Success → timeout → Idle
+```
+
