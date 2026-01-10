@@ -92,3 +92,65 @@ Main application logic:
 
 Educational/Example code - use at your own risk.
 ## Behind the app:
+
+
+flipper-fa-bypass-app
+
+## Compiling and Flashing: 
+
+```bash
+python3 -m venv ufbtVenv
+. ufbtVenv/bin/activate
+python3 -m pip install --upgrade ufbt
+ufbt vscode_dist # Set vscode paths
+ufbt launch # Flash the new app
+ufbt build
+
+ufbt launch APPID=fa_bypass
+fa_bypass
+
+UFBT_APP_DIR:
+
+
+fap_{APPID}
+
+ufbt launch VERBOSE=True
+
+ufbt --help VERBOSE=True
+
+ufbt --help VERBOSE=True UFBT_APP_DIR='/home/lofu/flipper/fa_bypass_app'
+
+ufbt build VERBOSE=True UFBT_APP_DIR='/home/lofu/flipper/fa_bypass_app'
+
+ufbt build  UFBT_APP_DIR='/home/lofu/flipper/fa_bypass_app'
+
+
+ufbt launch
+
+```
+
+## TO seeFURI Logs:
+```bash
+ufbt cli
+```
+
+
+
+### Usefull links:
+ - https://developer.flipper.net/flipperzero/doxygen/index.html
+ - https://etyp.dev/posts/flipper-into-hardware-p1/
+ - https://github.com/jamisonderek/flipper-zero-tutorials/wiki/User-Interface
+
+
+
+
+
+
+
+### Check the connected serial ports:
+```bash
+ls /dev/serial/by-id/
+screen /dev/serial/by-id/[...]
+```
+
+

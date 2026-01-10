@@ -1,0 +1,17 @@
+App(
+    appid="fa_bypass",
+    name="FA Bypass",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="fa_bypass_app_run",
+    cdefines=["APP_FA_BYPASS"],
+    requires=["gui", "storage", "crypto"],
+    stack_size=4096,
+
+    icon="A_fa_bypass_10",
+
+    order=10,
+    
+    fap_category="USB",
+    fap_version="0.1",
+    fap_icon="icon.png",
+)
