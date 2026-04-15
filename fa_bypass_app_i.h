@@ -60,10 +60,10 @@ struct FA_BypassApp {
     Widget* widget;
     FuriTimer* timer;
     GpioCustomEvent event_cur;
-    bool u2f_ready;
+    bool fa_bypass_ready;
     FA_BypassApp_Error error;
     
-    // U2fHid* u2f_hid;
-    // U2fView* u2f_view;
-    // U2fData* u2f_instance;
+    // U2fHid* fa_bypass_hid;
+    // U2fView* fa_bypass_view;
+    // U2fData* fa_bypass_instance;
 };

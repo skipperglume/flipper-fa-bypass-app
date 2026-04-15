@@ -1,0 +1,1 @@
+. ../ufbtVenv/bin/activate
